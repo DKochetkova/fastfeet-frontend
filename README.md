@@ -18,6 +18,7 @@ Setup back-end
 All of the following commands that has [] wrapped around it are related to the .env file. Just duplicate from .env.example and update the values.
 
 PostgreSQL
+
 $ docker run --name database -e POSTGRES_PASSWORD=[DB_PASS] -p 5432:5432 -d [DB_USER]
 
 Redis
@@ -49,6 +50,7 @@ $ Start server
 $ yarn start
 
 Setup mobile
+
 Change directory to the mobile folder cd mobile and run yarn install. Open src/services/api.js and update the API_URL variable with the APP_URL you specified in the config backend. The mobile app was tested on the iOS Simulator (iPhone X and iPhone 8), Genymotion (Google Pixel 3) and on an actual Android device (Moto X4).
 
 Build app for Android
@@ -71,5 +73,5 @@ Tools and technologies used on this project:
 - Immer
 - Styled Components
 
-Thanks for checking this project out! Cheers!
+
 
